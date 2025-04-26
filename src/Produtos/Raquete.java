@@ -1,11 +1,11 @@
-package Produtos;
+package produtos;
 
 public class Raquete extends Produto {
     public enum MATERIAL {Metal, Aluminio, Carbono}
     private MATERIAL material;
 
 
-    public Raquete(Integer codigo, Float preco, String cor, TAMANHO tamanho, ESPORTE esporte, MATERIAL material) {
+    public Raquete(String codigo, Float preco, String cor, TAMANHO tamanho, ESPORTE esporte, MATERIAL material) {
         super(codigo, preco, cor, tamanho, esporte);
         this.material = material;
     }

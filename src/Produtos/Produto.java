@@ -1,15 +1,15 @@
-package Produtos;
+package produtos;
 
 public abstract class Produto {
     public enum TAMANHO {P, M, G};
     public enum ESPORTE {Volei, Futebol, Basquete, Handebol, Rugby, Tênis};
     private TAMANHO tamanho;
     private ESPORTE esporte;
-    private Integer codigo;
+    private String codigo;
     private Float preco;
     private String cor;
 
-    public Produto(Integer codigo, Float preco, String cor, TAMANHO tamanho, ESPORTE esporte) {
+    public Produto(String codigo, Float preco, String cor, TAMANHO tamanho, ESPORTE esporte) {
         this.codigo = codigo;
         this.preco = preco;
         this.cor = cor;
@@ -25,7 +25,7 @@ public abstract class Produto {
         return esporte;
     }
 
-    public Integer getCodigo() {
+    public String getCodigo() {
         return codigo;
     }
 
